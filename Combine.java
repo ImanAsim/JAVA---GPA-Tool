@@ -40,7 +40,6 @@ public class Combine {
                 
             }
 
-            newInput.close();
 
         termGPA = gpa(semester);
          return termGPA;
@@ -50,7 +49,7 @@ public class Combine {
     public static double nextTerm(double pastgpa, int pastCreds){
         double pastQualityPoints = pastgpa * pastCreds;
         
-    
+    newSemester();
     double newQualityPoints=0;
     int newCreds=0;
     for(int i=0; i<semester.size(); i++){
